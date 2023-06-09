@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 const Skills = () => {
   return (
     <Box id='skills'>
-      <Navbar/>
+   
     </Box>
   )
 }

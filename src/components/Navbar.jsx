@@ -7,58 +7,60 @@ const Navbar = () => {
   const location = useLocation();
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box id='nav-menu' >
+    <Box id='nav-menu' position={"fixed"} w={"100%"}  border={"1px solid white"}>
       <Flex display={["none","flex","flex"]} justifyContent='space-evenly' bg='black' p='10px' >
-        <Text
-          className={`nav-link home ${location.pathname === '/' ? 'active' : ''}`}
-          as={Link}
-          fontSize={` ${location.pathname === '/' ? '20px' : '18px'}`}
-          fontWeight='bold'
-          to='/'
-          color={location.pathname === '/' ? 'red' : 'teal'}
+        <a
+          class={"nav-link home"}
+          href='#home'
+          // color={location.pathname === '/' ? 'red' : 'teal'}
+         style={{color:"teal",fontSize:"20px",fontWeight:"bold"}}
         >
           Home
-        </Text>
-        <Text
-          className={`nav-link about ${location.pathname === '/about' ? 'active' : ''}`}
-          as={Link}
-          fontSize={` ${location.pathname === '/about' ? '20px' : '18px'}`}
-          fontWeight='bold'
-          to='/about'
-          color={location.pathname === '/about' ? 'red' : 'teal'}
+        </a>
+        <a
+          class={"nav-link about"}
+    
+          href='#about'
+          style={{color:"teal",fontSize:"20px",fontWeight:"bold"}}
+
         >
           About
-        </Text>
-        <Text
-          className={`nav-link skills ${location.pathname === '/skills' ? 'active' : ''}`}
-          as={Link}
+        </a>
+        <a
+          className="nav-link skills"
           fontSize={` ${location.pathname === '/skills' ? '20px' : '18px'}`}
           fontWeight='bold'
           to='/skills'
-          color={location.pathname === '/skills' ? 'red' : 'teal'}
+          // color={location.pathname === '/skills' ? 'red' : 'teal'}
+         style={{color:"teal"}}
+
         >
           Skills
-        </Text>
-        <Text
+        </a>
+        <a
           className={`nav-link projects ${location.pathname === '/projects' ? 'active' : ''}`}
           as={Link}
           fontSize={` ${location.pathname === '/projects' ? '20px' : '18px'}`}
           fontWeight='bold'
           to='/projects'
-          color={location.pathname === '/projects' ? 'red' : 'teal'}
+          // color={location.pathname === '/projects' ? 'red' : 'teal'}
+         style={{color:"teal"}}
+
         >
           Projects
-        </Text>
-        <Text
+        </a>
+        <a
           className={`nav-link contact ${location.pathname === '/contact' ? 'active' : ''}`}
           as={Link}
           fontSize={` ${location.pathname === '/contact' ? '20px' : '18px'}`}
           fontWeight='bold'
           to='/contact'
-          color={location.pathname === '/contact' ? 'red' : 'teal'}
+          // color={location.pathname === '/contact' ? 'red' : 'teal'}
+         style={{color:"teal"}}
+
         >
           Contact
-        </Text>
+        </a>
         <Button
         variant={"outline"}
          id='resume-button-1'

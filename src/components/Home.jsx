@@ -3,19 +3,20 @@ import React from 'react'
 import Navbar from './Navbar'
 import { ViewIcon } from '@chakra-ui/icons'
 import GithubActivity from './GithubActivity'
+import About from "./About"
 const Home = () => {
 
 
   return (
-    <Box h={"100vh"} backgroundImage={["https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80","https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80","https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80"]} >
-      <Navbar />
-    <Box id="home" p={["20px","40px","40px"]}  >
+    <>
+    <Box h={"100vh"} p={["20px","40px","40px"]} backgroundImage={["https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=repeat&w=1200&q=80","https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80","https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80"]} >
+    <Box id="home" p={["20px","40px","60px"]}  >
      <Flex direction={["column","row","row"]}  justifyContent={"space-evenly"} gap={["10px","30px","30px"]}>
       <Flex direction={"column"} w={"40%"} m={"auto"}>
      <Box textAlign={"center"}  m={"auto"}>
      <Image borderRadius='full'
   boxSize={["100px","150px","250px"]}
-  src='https://bit.ly/dan-abramov'
+  src='https://blog.imarticus.org/wp-content/uploads/2017/10/scopet.gif'
   alt='Dan Abramov'></Image>
      </Box>
         <Text textAlign={"center"}color={"yellow"} fontSize={["20px","30px","50px"]} fontFamily={"Brush script MT"}>Akash Saha</Text>
@@ -42,6 +43,8 @@ const Home = () => {
      </Box>
     </Box>
     </Box>
+    {/* <About/> */}
+    </>
   )
 }
 

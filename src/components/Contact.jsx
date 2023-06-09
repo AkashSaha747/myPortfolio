@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 const Contact = () => {
   return (
     <Box id='contact'>
-      <Navbar/>
+    
     </Box>
   )
 }
